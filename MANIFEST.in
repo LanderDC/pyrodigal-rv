@@ -4,4 +4,4 @@ include CONTRIBUTING.md
 include README.md
 include CITATION.cff
 include pyproject.toml
-include pyrodigal_gv/meta.json
+include pyrodigal_rv/meta.json

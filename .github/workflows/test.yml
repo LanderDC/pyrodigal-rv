@@ -43,7 +43,7 @@ jobs:
     - name: Install Pyrodigal
       run: pip install -U --pre pyrodigal
     - name: Install requirements
-      run: pip install -U -r pyrodigal_gv/tests/requirements.txt
+      run: pip install -U -r pyrodigal_rv/tests/requirements.txt
     - name: Test code
       run: python -m unittest discover -v
     

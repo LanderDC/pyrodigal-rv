@@ -3,17 +3,25 @@ import sys
 import typing
 
 from pyrodigal import GeneFinder
-from pyrodigal.cli import main as _main, argument_parser as _argument_parser
+from pyrodigal.cli import argument_parser as _argument_parser
+from pyrodigal.cli import main as _main
+
 from . import ViralGeneFinder, __version__
 
+
 def argument_parser(
-    prog: str = "pyrodigal-gv",
+    prog: str = "pyrodigal-rv",
     version: str = __version__,
     input_required: bool = True,
     formatter_class: argparse.HelpFormatter = argparse.ArgumentDefaultsHelpFormatter,
 ) -> argparse.ArgumentParser:
-    parser = _argument_parser(prog=prog, version=version, input_required=input_required, formatter_class=formatter_class)
-    mode_action = next( action for action in parser._actions if action.dest == "p" )
+    parser = _argument_parser(
+        prog=prog,
+        version=version,
+        input_required=input_required,
+        formatter_class=formatter_class,
+    )
+    mode_action = next(action for action in parser._actions if action.dest == "p")
     mode_action.default = "meta"
     return parser
 

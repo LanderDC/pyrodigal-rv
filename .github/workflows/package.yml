@@ -50,9 +50,9 @@ jobs:
     - name: Install Pyrodigal pre-release
       run: python -m pip install --pre pyrodigal
     - name: Install built wheel
-      run: python -m pip install --only-binary pyrodigal-gv --find-links=dist pyrodigal-gv
+      run: python -m pip install --only-binary pyrodigal-rv --find-links=dist pyrodigal-rv
     - name: Run tests without coverage
-      run: python -m unittest pyrodigal_gv.tests -vv
+      run: python -m unittest pyrodigal_rv.tests -vv
 
   sdist:
     runs-on: ubuntu-latest
@@ -97,9 +97,9 @@ jobs:
     - name: Install Pyrodigal pre-release
       run: python -m pip install --pre pyrodigal
     - name: Install built wheel
-      run: python -m pip install --no-binary pyrodigal-gv --find-links=dist pyrodigal-gv
+      run: python -m pip install --no-binary pyrodigal-rv --find-links=dist pyrodigal-rv
     - name: Run tests without coverage
-      run: python -m unittest pyrodigal_gv.tests -vv
+      run: python -m unittest pyrodigal_rv.tests -vv
 
   upload:
     environment: PyPI
