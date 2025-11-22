@@ -82,9 +82,12 @@ the results will be exactly the same as `pyrodigal`, so why would you ever do th
 To evaluate `pyrodigal-rv` ORF prediction in RNA viruses, all *Riboviria* sequences in RefSeq indicated as "complete" by the sequence submission authors and without N's in the sequence were used as a benchmark (*n=9,001*).
 
 All tools were run in closed mode (`-c`) and `pyrodigal` was forced to use genetic code 1 (`-g 1`) for the benchmarking as this is the most used genetic code by RNA viruses. 
-After comparison with the CDS annotations from RefSeq `pyrodigal` and `pyrodigal-rv` give 51% and 42% exact matches respectively, while both of them also predicted 35% CDSs with different start and/or stop sites compared to RefSeq. 
-For `pyrodigal-rv` another 10.5% was predicted to only have a different translation table.<br>
-As expected `pyrodigal-gv` had almost no exact matches because it contains no metagenomic models with genetic code 1, but it also predicts 50% CDSs with different start/stop sites which is considerably higher than `pyrodigal` and `pyrodigal-rv`.
+After comparison with the CDS annotations from RefSeq `pyrodigal` and `pyrodigal-rv` give 58.9% and 49.4% exact matches respectively, while both of them also predicted ~25% CDSs with different start and/or stop sites compared to RefSeq. 
+For `pyrodigal-rv` another 12.4% was predicted to only have a different translation table.
+
+As expected `pyrodigal-gv` had almost no exact matches because it contains no metagenomic models with genetic code 1, and it also predicts 28.8% CDSs
+
+`pyrodigal-rv` also performed best in context of extra and missing CDS predictions (considerably lower amount extra predictions and only 0.4% more missing predictions compared to `pyrodigal`).
 
 <p align="center">
   <img src="images/comparison.png" width="500" title="comparisons">
