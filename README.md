@@ -24,7 +24,7 @@ Additionally, `pyrodigal-gv` is a small extension module for pyrodigal (both wri
 
 Inspired by the additional metagenomic models for giant viruses and bacteriophages in [`pyrodigal-gv`](https://github.com/althonos/pyrodigal-gv), `pyrodigal-rv` substitutes those metagenomic models and the bacterial models from `pyrodigal` for metagenomic models from RNA viruses which mostly use the standard genetic code (translation table 1), but also include RNA virus models with alternative genetic codes.
 
-See [below](#models) for which viral families and which genetic codes are included. 
+See [below](#models) for which viral families and which genetic codes are included. The process of model generation is documented in a [separate repo](https://github.com/LanderDC/add_pyrodigal_rv_models).
 
 *Code and instructions below are exactly the same as for `pyrodigal-gv`.*
 
@@ -76,6 +76,8 @@ by default! Running in **single** mode can be done with `pyrodigal-rv -p single`
 the results will be exactly the same as `pyrodigal`, so why would you ever do this ⁉️*
 
 ## 📊 Benchmarking
+
+The benchmarking is documented in [this repo](https://github.com/LanderDC/add_pyrodigal_rv_models).
 
 ### Accuracy
 
