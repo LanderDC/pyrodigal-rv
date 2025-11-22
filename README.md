@@ -102,6 +102,8 @@ This shows that not all sequences in RefSeq are annotated with the correct trans
   <img src="images/transl_table_mismatches_by_family.png" width="1000" title="tt_mismatch_fam">
 </p>
 
+**Disclaimer:** The training models for `pyrodigal-rv` contain some RefSeq sequences.
+
 ### Speed
 
 CLI speed was benchmarked with [hyperfine](https://github.com/sharkdp/hyperfine) over 10 runs of the same command on 9,000 sequences for each CLI ([`pyrodigal`](https://github.com/althonos/pyrodigal), [`pyrodigal-gv`](https://github.com/althonos/pyrodigal-gv) and `pyrodigal-rv`) using 10 processes (`-j 10 --pool process`). 
