@@ -87,7 +87,7 @@ All tools were run in closed mode (`-c`) and `pyrodigal` was forced to use genet
 After comparison with the CDS annotations from RefSeq `pyrodigal` and `pyrodigal-rv` give 58.9% and 49.4% exact matches respectively, while both of them also predicted ~25% CDSs with different start and/or stop sites compared to RefSeq. 
 For `pyrodigal-rv` another 12.4% was predicted to only have a different translation table.
 
-As expected `pyrodigal-gv` had almost no exact matches because it contains no metagenomic models with genetic code 1, and it also predicts 28.8% CDSs
+As expected `pyrodigal-gv` had almost no exact matches because it contains no metagenomic models with genetic code 1, and it also predicts 28.8% CDSs with different start/stop sites (4.6% higher than `pyrodigal-rv`).
 
 `pyrodigal-rv` also performed best in context of extra and missing CDS predictions (considerably lower amount extra predictions and only 0.4% more missing predictions compared to `pyrodigal`).
 
