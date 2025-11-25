@@ -84,7 +84,7 @@ The benchmarking is documented in [this repo](https://github.com/LanderDC/add_py
 To evaluate `pyrodigal-rv` ORF prediction in RNA viruses, all *Riboviria* sequences in RefSeq indicated as "complete" by the sequence submission authors and without N's in the sequence were used as a benchmark (*n=9,001*).
 
 All tools were run in closed mode (`-c`) and `pyrodigal` was forced to use genetic code 1 (`-g 1`) for the benchmarking as this is the most used genetic code by RNA viruses. 
-After comparison with the CDS annotations from RefSeq `pyrodigal` and `pyrodigal-rv` give 58.9% and 49.4% exact matches respectively, while both of them also predicted ~25% CDSs with different start and/or stop sites compared to RefSeq. 
+After comparison with the CDS annotations from RefSeq, `pyrodigal` and `pyrodigal-rv` give 58.9% and 49.4% exact matches respectively, while both of them also predicted ~25% CDSs with different start and/or stop sites compared to RefSeq. 
 For `pyrodigal-rv` another 12.4% was predicted to only have a different translation table.
 
 As expected `pyrodigal-gv` had almost no exact matches because it contains no metagenomic models with genetic code 1, and it also predicts 28.8% CDSs with different start/stop sites (4.6% higher than `pyrodigal-rv`).
@@ -92,7 +92,7 @@ As expected `pyrodigal-gv` had almost no exact matches because it contains no me
 `pyrodigal-rv` also performed best in context of extra and missing CDS predictions (considerably lower amount extra predictions and only 0.4% more missing predictions compared to `pyrodigal`).
 
 <p align="center">
-  <img src="images/comparison.png" width="500" title="comparisons">
+  <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/comparison.png" width="500" title="comparisons">
 </p>
 
 `pyrodigal-rv` adds the ability to predict the right genetic code for your RNA virus sequence, when comparing to RefSeq, 11.7% of the sequences had a mismatch in genetic code. 
@@ -100,11 +100,11 @@ However, when examining more closely the majority of these sequences belong to t
 This shows that not all sequences in RefSeq are annotated with the correct translation table and this benchmark underestimated `pyrodigal-rv`'s accuracy in number of exact matches. 
 
 <p align="left">
-  <img src="images/transl_table_mismatch.png" width="400" title="tt_mismatch">
+  <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatch.png" width="400" title="tt_mismatch">
 </p>
 
 <p align="center">
-  <img src="images/transl_table_mismatches_by_family.png" width="1000" title="tt_mismatch_fam">
+  <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatches_by_family.png" width="1000" title="tt_mismatch_fam">
 </p>
 
 **Disclaimer:** The training models for `pyrodigal-rv` contain some RefSeq sequences.
