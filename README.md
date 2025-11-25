@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square&maxAge=2678400)](https://choosealicense.com/licenses/gpl-3.0/)
 [![PyPI](https://img.shields.io/pypi/v/pyrodigal-rv.svg?style=flat-square&maxAge=3600&logo=PyPI)](https://pypi.org/project/pyrodigal-rv)
 [![Bioconda](https://img.shields.io/conda/vn/bioconda/pyrodigal-rv?style=flat-square&maxAge=3600&logo=anaconda)](https://anaconda.org/bioconda/pyrodigal-rv)
+[![AUR](https://img.shields.io/aur/version/python-pyrodigal-rv?logo=archlinux&style=flat-square&maxAge=3600)](https://aur.archlinux.org/packages/python-pyrodigal-rv)
 [![Wheel](https://img.shields.io/pypi/wheel/pyrodigal.svg?style=flat-square&maxAge=3600)](https://pypi.org/project/pyrodigal-rv/#files)
 [![Python Versions](https://img.shields.io/pypi/pyversions/pyrodigal-rv.svg?style=flat-square&maxAge=600&logo=python)](https://pypi.org/project/pyrodigal/#files)
 [![Python Implementations](https://img.shields.io/pypi/implementation/pyrodigal-gv.svg?style=flat-square&maxAge=600&label=impl)](https://pypi.org/project/pyrodigal-rv/#files)
