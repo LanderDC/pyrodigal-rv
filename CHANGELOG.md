@@ -8,6 +8,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [Unreleased]: https://github.com/LanderDC/pyrodigal-rv/compare/v0.1.0...HEAD
 
 ## [fork] - 2025-11-25
-[fork]: https://github.com/althonos/pyrodigal-gv/compare/1fd99ca...LanderDC:pyrodigal-rv:v0.1.0
+[fork]: https://github.com/althonos/pyrodigal-gv/compare/HEAD...LanderDC:pyrodigal-rv:HEAD
 
 Changes from original repository.
