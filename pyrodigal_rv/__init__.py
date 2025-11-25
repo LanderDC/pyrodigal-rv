@@ -1,11 +1,11 @@
-"""A Pyrodigal extension for improved prediction of genes from RNA viruses.
-"""
+"""A Pyrodigal extension for improved prediction of genes from RNA viruses."""
 
 __version__ = "0.1.0"
 __author__ = "Martin Larralde <martin.larralde@embl.de>"
 __license__ = "GPLv3"
 
 import typing
+
 import pyrodigal
 
 from .meta import METAGENOMIC_BINS, METAGENOMIC_BINS_VIRAL
@@ -13,11 +13,11 @@ from .meta import METAGENOMIC_BINS, METAGENOMIC_BINS_VIRAL
 # Expose the wrapped `prodigal-gv` version
 PRODIGAL_GV_VERSION = "v2.11.0"
 
+
 # Convenience subclass to run Pyrodigal in metagenomic mode using the
 # metagenomic models from `prodigal-gv` instead of stock `prodigal`.
 class ViralGeneFinder(pyrodigal.GeneFinder):
-    """A gene finder with additional viral metagenomic models.
-    """
+    """A gene finder with additional viral metagenomic models."""
 
     def __init__(
         self,
@@ -25,9 +25,7 @@ class ViralGeneFinder(pyrodigal.GeneFinder):
         *,
         meta: bool = False,
         metagenomic_bins: typing.Optional[pyrodigal.MetagenomicBins] = None,
-        closed=[False, False],
-        closed_start=None,
-        closed_stop=None,
+        closed: bool = False,
         mask: bool = False,
         min_mask: int = 50,
         min_gene: int = 90,
@@ -60,7 +58,7 @@ class ViralGeneFinder(pyrodigal.GeneFinder):
                 containing unknown nucleotides. Defaults to `False`.
             min_mask (`int`): The minimum mask length, when region masking
                 is enabled. Regions shorter than the given length will not
-                be masked, which may be helpful to prevent masking of 
+                be masked, which may be helpful to prevent masking of
                 single unknown nucleotides.
             min_gene (`int`): The minimum gene length. Defaults to the value
                 used in Prodigal.
@@ -85,8 +83,6 @@ class ViralGeneFinder(pyrodigal.GeneFinder):
             meta=meta,
             metagenomic_bins=metagenomic_bins,
             closed=closed,
-            closed_start=closed_start,
-            closed_stop=closed_stop,
             mask=mask,
             min_mask=min_mask,
             min_gene=min_gene,
