@@ -1,7 +1,7 @@
 """A Pyrodigal extension for improved prediction of genes from RNA viruses."""
 
 __version__ = "0.1.0"
-__author__ = "Martin Larralde <martin.larralde@embl.de>"
+__author__ = "Lander De Coninck <lander.deconinck@kuleuven.be>"
 __license__ = "GPLv3"
 
 import typing
