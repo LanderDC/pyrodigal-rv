@@ -2,8 +2,9 @@ import io
 import unittest
 
 import pyrodigal
-import pyrodigal_rv
 from pyrodigal.tests import fasta
+
+import pyrodigal_rv
 
 try:
     from importlib.resources import files as resource_files
@@ -12,23 +13,33 @@ except ImportError:
 
 
 class TestViralGeneFinder(unittest.TestCase):
-    
-    def test_topaz_genome(self):
+
+    def test_tymoviridae_genome(self):
         gene_finder = pyrodigal_rv.ViralGeneFinder(meta=True)
-        with resource_files(__package__).joinpath("phage_Topaz.fna").open("r") as f:
+        with resource_files(__package__).joinpath("Tymoviridae.fna").open("r") as f:
             record = next(fasta.parse(f))
             genes = gene_finder.find_genes(record.seq)
-        self.assertIs(genes.metagenomic_bin, pyrodigal_rv.METAGENOMIC_BINS[55])
-        with resource_files(__package__).joinpath("phage_Topaz.faa").open("r") as f:
+        self.assertIs(genes.metagenomic_bin, pyrodigal_rv.METAGENOMIC_BINS[0])
+        with resource_files(__package__).joinpath("Tymoviridae.faa").open("r") as f:
             for gene, protein in zip(genes, fasta.parse(f)):
                 self.assertEqual(gene.translate(), protein.seq)
 
-    def test_agate_genome(self):
+    def test_duamitovirus_genome(self):
         gene_finder = pyrodigal_rv.ViralGeneFinder(meta=True)
-        with resource_files(__package__).joinpath("phage_Agate.fna").open("r") as f:
+        with resource_files(__package__).joinpath("Duamitovirus.fna").open("r") as f:
             record = next(fasta.parse(f))
             genes = gene_finder.find_genes(record.seq)
-        self.assertIs(genes.metagenomic_bin, pyrodigal_rv.METAGENOMIC_BINS[54])
-        with resource_files(__package__).joinpath("phage_Agate.faa").open("r") as f:
+        self.assertIs(genes.metagenomic_bin, pyrodigal_rv.METAGENOMIC_BINS[62])
+        with resource_files(__package__).joinpath("Duamitovirus.faa").open("r") as f:
+            for gene, protein in zip(genes, fasta.parse(f)):
+                self.assertEqual(gene.translate(), protein.seq)
+
+    def test_atkinsviridae_genome(self):
+        gene_finder = pyrodigal_rv.ViralGeneFinder(meta=True)
+        with resource_files(__package__).joinpath("Atkinsviridae.fna").open("r") as f:
+            record = next(fasta.parse(f))
+            genes = gene_finder.find_genes(record.seq)
+        self.assertIs(genes.metagenomic_bin, pyrodigal_rv.METAGENOMIC_BINS[3])
+        with resource_files(__package__).joinpath("Atkinsviridae.faa").open("r") as f:
             for gene, protein in zip(genes, fasta.parse(f)):
                 self.assertEqual(gene.translate(), protein.seq)
