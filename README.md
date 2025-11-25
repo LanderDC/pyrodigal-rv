@@ -106,7 +106,7 @@ This shows that not all sequences in RefSeq are annotated with the correct trans
   <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatch.png" width="400" title="tt_mismatch">
 </p>
 
-<p align="center">
+<p align="left">
   <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatches_by_family.png" width="1000" title="tt_mismatch_fam">
 </p>
 
