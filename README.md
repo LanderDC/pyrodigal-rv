@@ -167,7 +167,8 @@ terms of the GPLv3 as well. See `vendor/Prodigal/LICENSE` for more information.
 by the [original Prodigal authors](https://github.com/hyattpd). It was developed
 by [Martin Larralde](https://github.com/althonos/) during his PhD project
 at the [European Molecular Biology Laboratory](https://www.embl.de/) in
-the [Zeller team](https://github.com/zellerlab).*
+the [Zeller team](https://github.com/zellerlab). RNA virus models were added by
+[Lander De Coninck](https://github.com/LanderDC/).*
 
 
 ## 📐 Models
