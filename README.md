@@ -27,6 +27,9 @@ Additionally, `pyrodigal-gv` is a small extension module for pyrodigal (both wri
 
 Inspired by the additional metagenomic models for giant viruses and bacteriophages in [`pyrodigal-gv`](https://github.com/althonos/pyrodigal-gv), `pyrodigal-rv` substitutes those metagenomic models and the bacterial models from `pyrodigal` for metagenomic models from RNA viruses which mostly use the standard genetic code (translation table 1), but also include RNA virus models with alternative genetic codes.
 
+> [!IMPORTANT]
+> Although `pyrodigal-rv` seems to perform well from [benchmarking](#benchmarking) on *Riboviria* RefSeq sequences, **the chosen model for gene prediction is by no means an indication of the sequence's taxonomy**. In addition, `pyrodigal-rv` might pick in a minority of cases the wrong translation table as in `pyrodigal` there is no difference between translation table 1 and 11 (they use the same start and stop codons). Therefore, caution is warranted when `pyrodigal-rv` gives you a translation table that would not match what you would expect based on the sequence's taxonomy. For example, the *Spinareoviridae* (see <a href="#famfig">here</a>) seem to be affected by this.
+
 See [below](#models) for which viral families and which genetic codes are included. The process of model generation is documented in a [separate repo](https://github.com/LanderDC/add_pyrodigal_rv_models).
 
 *Code and instructions below are exactly the same as for `pyrodigal-gv`.*
@@ -106,9 +109,11 @@ This shows that not all sequences in RefSeq are annotated with the correct trans
   <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatch.png" width="400" title="tt_mismatch">
 </p>
 
+<a name="famfig">
 <p align="left">
   <img src="https://raw.githubusercontent.com/LanderDC/pyrodigal-rv/main/images/transl_table_mismatches_by_family.png" width="1000" title="tt_mismatch_fam">
 </p>
+</a>
 
 **Disclaimer:** The training models for `pyrodigal-rv` contain some RefSeq sequences.
 
