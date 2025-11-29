@@ -138,7 +138,7 @@ an academic work, for instance as:
 
 > Pyrodigal (Larralde, 2022), a Python library binding to Prodigal (Hyatt *et al.*, 2010).
 
-Detailed references are available on the [Publications page](https://pyrodigal.readthedocs.io/en/stable/publications.html) of the
+Detailed references are available on the [Publications page](https://pyrodigal.readthedocs.io/en/stable/guide/publications.html) of the
 [online documentation](https://pyrodigal.readthedocs.io/).
 
 
