@@ -42,12 +42,11 @@ as a universal wheel that contains all required data files:
 $ pip install pyrodigal-rv
 ```
 
-<!--
-Otherwise, `pyrodigal-gv` is also available as a [Bioconda](https://bioconda.github.io/)
+Otherwise, `pyrodigal-rv` is also available as a [Bioconda](https://anaconda.org/channels/bioconda/packages/pyrodigal-rv/overview)
 package:
 ```console
-$ conda install -c bioconda pyrodigal-gv
-``` -->
+$ conda install -c bioconda pyrodigal-rv
+```
 
 ## 💡 Example
 
