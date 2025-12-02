@@ -23,7 +23,7 @@
 [Pyrodigal](https://github.com/althonos/pyrodigal) is a Python module that provides 
 [Cython](https://cython.org/) bindings to [Prodigal](https://github.com/hyattpd/Prodigal/), 
 an efficient gene finding method for genomes and metagenomes based on dynamic programming.
-Additionally, `pyrodigal-gv` is a small extension module for pyrodigal (both written by [Martin Larralde](https://github.com/althonos)) which distributes additional metagenomic models for giant viruses and viruses that use alternative genetic codes, first provided by [Antônio Camargo](https://github.com/apcamargo) in [`prodigal-gv`](https://github.com/apcamargo/prodigal-gv). 
+Additionally, `pyrodigal-gv` is a small extension module for `pyrodigal` (both written by [Martin Larralde](https://github.com/althonos)) which distributes additional metagenomic models for giant viruses and viruses that use alternative genetic codes, first provided by [Antônio Camargo](https://github.com/apcamargo) in [`prodigal-gv`](https://github.com/apcamargo/prodigal-gv). 
 
 Inspired by the additional metagenomic models for giant viruses and bacteriophages in [`pyrodigal-gv`](https://github.com/althonos/pyrodigal-gv), `pyrodigal-rv` substitutes those metagenomic models and the bacterial models from `pyrodigal` for metagenomic models from RNA viruses which mostly use the standard genetic code (translation table 1), but also include RNA virus models with alternative genetic codes.
 
